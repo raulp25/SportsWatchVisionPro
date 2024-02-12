@@ -1,0 +1,27 @@
+#usda 1.0
+(
+    customLayerData = {
+        string creator = "Reality Composer Pro Version 1.0 (409.60.6)"
+    }
+    defaultPrim = "Root"
+    metersPerUnit = 1
+    upAxis = "Y"
+)
+
+def Xform "Root"
+{
+    def "Idle_1_Male_Free_Animation_200_frames_loop" (
+        active = true
+        customData = {
+            float3 rotationEulerHint = (0, 0, -0.0006905339)
+        }
+        prepend references = @Idle_1_Male_Free_Animation_200_frames_loop.usdz@
+    )
+    {
+        quatf xformOp:orient = (0.99999994, 0, 0, -0.00034526692)
+        float3 xformOp:scale = (0.00019639073, 0.00019639073, 0.00019639074)
+        float3 xformOp:translate = (-0.0002134316, -7.564476e-15, 0.010003418)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+}
+

@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "atletico-logo.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "stadium1-scene.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
