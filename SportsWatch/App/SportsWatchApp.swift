@@ -28,7 +28,7 @@ struct SportsWatchApp: App {
                 }
         }.windowStyle(.plain).defaultSize(width: 2400, height: 1550)
         
-        // View that can represent a User Subscription Modal view
+        // View that can represent a user subscription Modal view
         WindowGroup(id: "SecondWindow", for: Popup.self) { $popup in
             if let popup {
                 ModalView(popup: popup)
