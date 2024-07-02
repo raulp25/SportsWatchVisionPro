@@ -25,7 +25,6 @@ struct ContentView: View {
     @State private var currentSpaceDestination: SpaceDestination?
     
     var body: some View {
-        
             GeometryReader { proxy in
                 let matchOptionsWidth = proxy.size.width * 0.3
                 VStack {

@@ -9,7 +9,7 @@ import Foundation
 
 /// Control the ornament tabs and the in-app routes
 @Observable
-class NavigationRouter {
+final class NavigationRouter {
     
     var currentOrnamentTab: OrnamentTab = .home
     var currentRoute: Route? = nil

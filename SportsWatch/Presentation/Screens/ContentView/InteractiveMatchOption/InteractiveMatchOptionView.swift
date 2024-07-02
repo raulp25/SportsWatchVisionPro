@@ -13,8 +13,8 @@ struct InteractiveMatchOptionView: View {
     @Binding var isPresentingSpace: Bool
     
     @State private var currentSpaceDestination: SpaceDestination?
-    @State var showCloseBtn = false
-    var isSameSpaceDestinationItem: Bool {
+    @State private var showCloseBtn = false
+    private var isSameSpaceDestinationItem: Bool {
         currentSpaceDestination == spaceDestinationsModel.currenSpacetDestination
     }
     

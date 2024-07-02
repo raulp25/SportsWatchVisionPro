@@ -116,7 +116,7 @@ class DeveloperPreview {
     let playerDEGEA:     TeamPlayer = .init(name: "DAVID", 
                                             surename: "DE GEA",
                                             number: 1,
-                                            imageUrl: "degea",
+                                            imageUrl: "DEGEA",
                                             position: .goalkeeper,
                                             lefStats: [.init(range: 81, acronym: "PAC"), .init(range: 92, acronym: "SHO"), .init(range: 78, acronym: "PAS")],
                                             rightStats: [.init(range: 85, acronym: "DRI"), .init(range: 34, acronym: "DEF"), .init(range: 75, acronym: "PHY")])
@@ -201,7 +201,7 @@ class DeveloperPreview {
     let settingsSubMenuOption: SubMenu         = .init(title: "SETTINGS CONTROLS", caption: nil, doubleline: false, backgroundImageUrl: nil, iconName: "gearshape.fill", type: .mockView)
     
   
-    init() {
+    private init() {
        loadData()
     }
     

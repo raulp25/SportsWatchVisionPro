@@ -66,6 +66,12 @@ private struct PlayerItemView: View {
     var orientation: SIMD3<Double> = .zero
     var modelDepth: CGFloat
     
+    var offset: CGFloat {
+        player.position == .midfielder
+        ? 60
+        : -modelDepth / 2
+    }
+    
     var body: some View {
         Model3D(named: player.position == .midfielder ? "Skull" : "PlayerFront", bundle: realityKitContentBundle) { model in
             model.resizable()
@@ -76,7 +82,7 @@ private struct PlayerItemView: View {
                     )
                 )
                 .frame(depth: modelDepth)
-                .offset(z: -modelDepth / 2)
+                .offset(z: offset)
             
         } placeholder: {
             ProgressView()
