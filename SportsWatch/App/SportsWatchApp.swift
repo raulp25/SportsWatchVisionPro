@@ -66,8 +66,16 @@ struct SportsWatchApp: App {
 
 
 /* Known bugs:
-     1.- If the window is full-sized, the Picker (segmented) that represents Score|Timeline|Line-Up|Stats tabs in ContentView won't recognize clicks made to tabs that are on the right side. You need to resize the window to a smaller size so it recognizes clicks in the right
-         direction. Clicks in the left direction in the Picker are always recognized whether the window is fully sized or not.
  
-     2.- When switching Immersive spaces on the InteractiveMatchOptionView component, sometimes it won't refresh and call the code inside the current card, and it won't update the close button text in cards that display that button.
+    VisionOS 2.0 and below:
+ 
+         If the window is full-sized, the segmented Picker that represents Score|Timeline|Line-Up|Stats tabs in ContentView won't
+         recognize clicks made to tabs that are on the right side. You need to resize the window to a smaller size so it recognizes
+         clicks in the right direction. Clicks in the left direction in the Picker are always recognized whether the window is fully
+         sized or not.
+     
+    VisionOS versions > 2.0 (1.0, 1.1, 1.2)
+ 
+        When switching Immersive spaces on the InteractiveMatchOptionView component, sometimes it won't refresh and call the code inside
+        the current card, and it won't update the close button text in cards that display that button.
  */
